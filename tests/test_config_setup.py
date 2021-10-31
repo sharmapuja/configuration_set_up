@@ -31,21 +31,25 @@ read_yaml = 'src.config_setup.ConfigSetUp.read_yaml'
 
 @pytest.fixture()
 def temp_path_valid():
+    """Fixture to get a valid file path """
     return os.path.join(os.getcwd(), 'src', 'configurations', 'sample.conf')
 
 
 @pytest.fixture()
 def temp_path_invalid():
+    """Fixture to get invalid file path"""
     return os.path.join(os.getcwd(), 'invalid')
 
 
 @pytest.fixture()
 def get_file_path(file_name):
+    """Fixture to get sample tests file path"""
     return os.path.join(os.getcwd(), 'tests', 'config', file_name)
 
 
 @pytest.fixture()
 def config_setup():
+    """ConfigSetup object"""
     return ConfigSetUp(flattened_dict)
 
 
@@ -59,7 +63,6 @@ def test_dir_path_invalid(temp_path_invalid):
 def test_dir_path_valid(temp_path_valid):
     """ Test method to validate if given file path is valid """
     path = dir_path(temp_path_valid)
-    print(path)
     assert path == temp_path_valid
 
 

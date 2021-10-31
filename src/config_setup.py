@@ -105,8 +105,8 @@ class ConfigSetUp:
 
     def create_env_file(self):
         """
-
-        :return:
+        Create .env file and write variables in it
+        :return: boolean
         """
         with open(".env", "w") as env_file:
             for key, val in self._flattened_dict.items():
@@ -115,8 +115,8 @@ class ConfigSetUp:
 
     def create_json_file(self):
         """
-
-        :return:
+        Create .json file and write environment variables in it
+        :return:boolean
         """
         with open("env.json", 'w') as file_out:
             json_dumps_str = json.dumps(self._flattened_dict, indent=4)

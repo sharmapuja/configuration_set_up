@@ -8,6 +8,7 @@ Ubuntu Desktop 20.04 LTS
 
 ## Source code directory and file structure
 src : All source code applications.
+
 tests: All test files for source code applications
 
 
@@ -15,7 +16,7 @@ tests: All test files for source code applications
 1. Configuration & Installation: 
    
     a. Clone Repository
-        https://git.
+        https://github.com/sharmapuja/configuration_set_up.git
 
     b. Create virtual environment
         Go to root directory 'configuration_setup'.
