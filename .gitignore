@@ -8,6 +8,15 @@ htmlcov/
 .cache
 .pytest_cache/
 
+# Distribution/packaging
+build/
+develop-eggs/
+eggs/
+.eggs/
+*.egg
+*.egg-info/
+dist/
+
 # Environments
 .venv
 venv/
