@@ -21,7 +21,7 @@ tests: All test files for source code applications
     b. Create virtual environment
         Go to root directory 'configuration_setup'.
    
-        pip3 -m "venv" venv
+        pytho3 -m "venv" venv
 
     c. Activate virtual environment
    
